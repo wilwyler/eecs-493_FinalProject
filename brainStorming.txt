@@ -5,4 +5,12 @@ First few things are gonna be directly from the website:
     - A website that allows users to rent and reserve parking spaces in Ann Arbor
     - A web application where users can share their on- and off-campus memories through photographs during the winters of Ann Arbor.
     - An interactive map application that provides routes between North Campus locations that minimizes time walking outside, so everyone can have warmer winter walks!
-    
+
+
+Ideas I (Jake Lohrke) have saved that I don't hate:
+    - Procedural map maker
+    - DND character generator
+    - Chess engine
+    - AI email spam classifier
+    - Music Suggestion tool using spotify api
+    - Some form of financial forecaster tool for budgeting and stuff
