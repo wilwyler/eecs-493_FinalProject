@@ -1,0 +1,8 @@
+First few things are gonna be directly from the website:
+    - An application that helps students find a study spot on campus.
+    - A forum allowing people to share events, traffic updates, news content, memes and more around Ann Arbor's fluctuating weather.
+    - A game that raises awareness - in an entertaining way - about winter's strain on Ann Arbor's aging infrastructure.
+    - A website that allows users to rent and reserve parking spaces in Ann Arbor
+    - A web application where users can share their on- and off-campus memories through photographs during the winters of Ann Arbor.
+    - An interactive map application that provides routes between North Campus locations that minimizes time walking outside, so everyone can have warmer winter walks!
+    
