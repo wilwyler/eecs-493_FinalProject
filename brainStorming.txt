@@ -14,3 +14,22 @@ Ideas I (Jake Lohrke) have saved that I don't hate:
     - AI email spam classifier
     - Music Suggestion tool using spotify api
     - Some form of financial forecaster tool for budgeting and stuff
+    
+Spotify Podcast Tool Development:
+
+Goal: Spotify does a really poor job with podcasts. On desktop, you can't even get a list of the most recent podcasts from the set you follow. I'd like to make a tool that you can connect your spotify account to that allows you to plan which episodes need to be listened to and in what order (either manually or sorted in some way that you can customize)
+
+Targeted consumer: anyone who likes to listen to podcasts, but doesn't want to have to get some totally different application to access those podcasts in a nice way. (aaaand maybe we get picked up by spotify who knowwwwws)
+
+Ideas for features:
+- use the spotify api to grab all of the podcasts from the podcasts you're following
+- per each podcast, 
+    - be able to set its priority 1-6 as to where you want to see it
+    - choose whether to sort podcast by date published (forward or reverse) or by last listened to
+    - declare whether or not you have listened to any particular episode to remove it from the list
+- for podcasts together:
+    - using the priority settings and sort settings, build a queue of podcasts in the order matching the settings for each podcast
+    - allow users to add or remove epidodes from this queue
+    - export the curated list of podcasts in your designed order to the spotify queue so that you can actually listen to the order you come up with
+- keep stats on listening times like how long you've listened in total or by podcast and a timeline of listening time if possible
+- share statistics on social media platforms with either generated pictures or generated, shareable webpages
