@@ -1,50 +1,26 @@
 /**
- * This is an example of a basic node.js script that performs
- * the Client Credentials oAuth2 flow to authenticate against
- * the Spotify Accounts.
- *
- * For more information, read
- * https://developer.spotify.com/web-api/authorization-guide/#client_credentials_flow
+ * Scopes enable your application to access specific API endpoints on behalf of a user. 
+ * The set of scopes you pass in your call determines the access permissions 
+ * that the user is required to grant.
+ * The following code generates a request for the scopes user-read-private and user-read-email:
+ * User will be redirected to spotify login page saved in the project as "oauth.png"
  */
-
- /**
-  * JKL -
-  * From what I can tell this is the non Node.js server specific one, just Node.js
-  * but I'm unsure, other people should explore this
-  * https://github.com/spotify/web-api-auth-examples
-  */
-
-var request = require('request'); // "Request" library
-
-var client_id = 'CLIENT_ID'; // Your client id
-var client_secret = 'CLIENT_SECRET'; // Your secret
-
-// your application requests authorization
-var authOptions = {
-  url: 'https://accounts.spotify.com/api/token',
-  headers: {
-    'Authorization': 'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64'))
-  },
-  form: {
-    grant_type: 'client_credentials'
-  },
-  json: true
-};
-
-request.post(authOptions, function(error, response, body) {
-  if (!error && response.statusCode === 200) {
-
-    // use the access token to access the Spotify Web API
-    var token = body.access_token;
-    var options = {
-      url: 'https://api.spotify.com/v1/users/jmperezperez',
-      headers: {
-        'Authorization': 'Bearer ' + token
-      },
-      json: true
-    };
-    request.get(options, function(error, response, body) {
-      console.log(body);
+// TODO: replace my_client_id with user client id
+app.get('/login', function(req, res) {
+    var scopes = 'user-read-private user-read-email';
+    res.redirect('https://accounts.spotify.com/authorize' +
+      '?response_type=code' +
+      '&client_id=' + my_client_id +
+      (scopes ? '&scope=' + encodeURIComponent(scopes) : '') +
+      '&redirect_uri=' + encodeURIComponent(redirect_uri));
     });
-  }
-});
+
+// example of token access
+$.ajax({
+    url: 'https://api.spotify.com/v1/me',
+    headers: {
+        'Authorization': 'Bearer ' + accessToken
+    },
+    success: function(response) {
+    }
+})

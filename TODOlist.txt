@@ -8,8 +8,9 @@ Spotify api reference sheet:
 TODO: register web app with spotify:
     https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app
 
-TODO: implement "Authorization Code Flow with Proof Key for Code Exchange (PKCE)"
-    - workflow of authorization on spotify for client-based wep apps
+TODO: implement "Implicit Grant Flow"
+    - workflow of authorization on spotify for client-based wep apps in JavaScript
     - regular Authorization Code Flow is meant for serverside and should not be used
+    - for reference, this flor is 75% down the given webpage below
     https://developer.spotify.com/documentation/general/guides/authorization-guide/
 

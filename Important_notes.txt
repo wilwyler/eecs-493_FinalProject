@@ -1,0 +1,5 @@
+This page for reference in the API
+    - the app is currently called "spodder" (this can be changed)
+    - registered to my (Jake) spotify profile
+    - Client ID: 7a40de97109544c8b0fc9cd48456c0ae
+    - Client Secret: 28dca8fd6ba148ec9943f996f74eae62
