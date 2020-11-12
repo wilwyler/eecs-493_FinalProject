@@ -4,3 +4,12 @@ Everyone should read exampleOauth.js and go to the linked github
 
 Spotify api reference sheet:
     https://developer.spotify.com/documentation/web-api/reference-beta/#category-shows
+
+TODO: register web app with spotify:
+    https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app
+
+TODO: implement "Authorization Code Flow with Proof Key for Code Exchange (PKCE)"
+    - workflow of authorization on spotify for client-based wep apps
+    - regular Authorization Code Flow is meant for serverside and should not be used
+    https://developer.spotify.com/documentation/general/guides/authorization-guide/
+
