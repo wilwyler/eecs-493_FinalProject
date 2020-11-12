@@ -1,0 +1,6 @@
+Everyone should read exampleOauth.js and go to the linked github
+    I don't know if I'm looking down the right road, because it's in Node.js
+    but I think that's the basics of logging in
+
+Spotify api reference sheet:
+    https://developer.spotify.com/documentation/web-api/reference-beta/#category-shows
