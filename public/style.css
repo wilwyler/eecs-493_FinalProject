@@ -1,0 +1,48 @@
+.loginPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#loginButton {
+  max-width: 150px;
+  background: green;
+  padding: 10px 10px 10px 10px;
+  border: 3px solid white;
+  font: 20px;
+}
+
+body {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.podcastList {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.episodeList {
+  width: 50%;
+}
+
+.exportList {
+  width: 50%;
+}
+
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+a:visted {
+  color: white;
+}
+
